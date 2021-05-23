@@ -1,0 +1,11 @@
+SELECT DISTINCT cid, DISTINCT iid
+
+FROM Costumer, Item
+
+ORDER BY cid, iid ASC
+
+EXCEPT
+
+SELECT DISTINCT P.cid, DISTINCT P.iid
+
+FROM  P;
